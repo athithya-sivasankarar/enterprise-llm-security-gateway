@@ -1,0 +1,36 @@
+from enum import Enum
+
+
+class TestCategory(str, Enum):
+    __test__ = False
+    AUTHENTICATION = "AUTHENTICATION"
+    RBAC = "RBAC"
+    RATE_LIMITING = "RATE_LIMITING"
+    INPUT_DLP = "INPUT_DLP"
+    PROMPT_INJECTION = "PROMPT_INJECTION"
+    JAILBREAK = "JAILBREAK"
+    SYSTEM_PROMPT_EXTRACTION = "SYSTEM_PROMPT_EXTRACTION"
+    SECRET_LEAKAGE = "SECRET_LEAKAGE"
+    UNSAFE_CONTENT = "UNSAFE_CONTENT"
+    RESPONSE_PII = "RESPONSE_PII"
+    CACHE_ISOLATION = "CACHE_ISOLATION"
+    POLICY = "POLICY"
+    AUDIT = "AUDIT"
+    OBSERVABILITY = "OBSERVABILITY"
+
+
+class SeverityLevel(str, Enum):
+    CRITICAL = "CRITICAL"
+    HIGH = "HIGH"
+    MEDIUM = "MEDIUM"
+    LOW = "LOW"
+    INFO = "INFO"
+
+
+class TestStatus(str, Enum):
+    __test__ = False
+    PASS = "PASS"
+    FAIL = "FAIL"
+    ERROR = "ERROR"
+    SKIPPED = "SKIPPED"
+

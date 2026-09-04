@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: enterprise-llm-security
+  labels:
+    name: enterprise-llm-security
+    app.kubernetes.io/part-of: enterprise-llm-security-gateway
